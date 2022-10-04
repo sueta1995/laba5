@@ -1,3 +1,9 @@
-a = gets.chomp.split("").select { |x| x =~ /[A-Z0-9]/ }
+class Prog
+	def initialize el
+		@a = el.split("").select { |x| x =~ /[A-Z0-9]/ }
+	end
 
-puts a == a.reverse
+	def check
+		@a == @a.reverse
+	end
+end

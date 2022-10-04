@@ -1,4 +1,9 @@
-a = gets.chomp.to_i
-b = gets.chomp.to_i
+class Prog
+  def initialize el1, el2
+    @a, @b = el1, el2
+  end
 
-puts (Math.sin(a) - b) / (b.abs + Math.cos(b**2))
+  def calc
+    (Math.sin(@a) - @b) / (@b.abs + Math.cos(@b**2))
+  end
+end
