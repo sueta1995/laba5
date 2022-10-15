@@ -1,9 +1,12 @@
-class Prog
-	def initialize el
-		@a = el.split("").select { |x| x =~ /[A-Z0-9]/ }
-	end
+# frozen_string_literal: true
 
-	def check
-		@a == @a.reverse
-	end
+# main class
+class Prog
+  def initialize(elem)
+    @a = elem.split('').select { |x| x =~ /[A-Z0-9]/ }
+  end
+
+  def check
+    @a == @a.reverse
+  end
 end

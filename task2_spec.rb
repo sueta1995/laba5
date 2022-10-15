@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rspec'
-require_relative 'task2.rb'
+require_relative 'task2'
 
 require 'securerandom'
 
-describe "task2" do
+describe 'task2' do
   context 'when parameter is valid' do
     it 'returns true if empty string' do
       expect(Prog.new('').check).to eq true
@@ -26,5 +28,4 @@ describe "task2" do
       expect { Prog.new(nil).check }.to raise_error
     end
   end
-
 end
